@@ -1,57 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+/* LOGO BMW */
+.bmw-logo {
+    width: 85px;
+    margin-bottom: 10px;
+}
 
+/* PALETA BMW */
+:root {
+    --bmw-blue: #1c69d4;
+    --bmw-black: #000000;
+    --bmw-dark: #0d0d0d;
+    --bmw-gray: #1a1a1a;
+    --bmw-light: #f2f2f2;
+}
+
+/* GENERAL */
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0a0a0a;
-    color: #e6e6e6;
+    background: var(--bmw-black);
+    color: var(--bmw-light);
 }
 
-/* HERO DEL INDEX */
-.hero {
-    background: url('https://upload.wikimedia.org/wikipedia/commons/3/3f/2021_BMW_M4_Competition.jpg') center/cover no-repeat;
-    padding: 150px 20px;
-    text-align: center;
-    color: #fff;
-    box-shadow: inset 0 0 200px rgba(0,0,0,0.8);
-}
-
-.hero h1 {
-    font-size: 50px;
-    font-weight: 700;
-    margin: 0;
-}
-
-.hero p {
-    font-size: 22px;
-    margin-top: 10px;
-    opacity: 0.9;
-}
-
-/* HEADER NORMAL */
+/* HEADER */
 header {
-    background: linear-gradient(135deg, #000, #1a1a1a);
-    padding: 40px 20px;
+    background: var(--bmw-black);
+    padding: 45px 20px;
     text-align: center;
+    border-bottom: 2px solid var(--bmw-blue);
 }
 
 header h1 {
-    font-size: 40px;
+    font-size: 38px;
     margin: 0;
     font-weight: 700;
+    color: var(--bmw-light);
 }
 
 header p {
-    margin-top: 10px;
+    margin-top: 8px;
     font-size: 18px;
-    opacity: 0.8;
+    opacity: 0.85;
 }
 
 /* NAV */
 nav {
-    background: #0f0f0f;
+    background: var(--bmw-dark);
     display: flex;
-    gap: 25px;
+    gap: 30px;
     padding: 18px 40px;
     border-bottom: 1px solid #222;
     position: sticky;
@@ -60,7 +55,7 @@ nav {
 }
 
 nav a {
-    color: #e6e6e6;
+    color: var(--bmw-light);
     text-decoration: none;
     font-weight: 500;
     font-size: 15px;
@@ -68,8 +63,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #00a2ff;
-    transform: translateY(-2px);
+    color: var(--bmw-blue);
 }
 
 /* CONTENEDOR */
@@ -80,33 +74,17 @@ nav a:hover {
     padding: 50px 0;
 }
 
+/* TITULOS */
 h2 {
-    font-size: 32px;
-    border-left: 6px solid #00a2ff;
-    padding-left: 12px;
-    margin-bottom: 40px;
-}
-
-/* BOTÓN */
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 14px 28px;
-    background: #00a2ff;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 40px;
+    font-size: 30px;
     font-weight: 600;
-    letter-spacing: 0.5px;
-    transition: 0.3s;
+    margin-bottom: 35px;
+    color: var(--bmw-light);
+    border-left: 5px solid var(--bmw-blue);
+    padding-left: 12px;
 }
 
-.btn:hover {
-    background: #0080cc;
-    transform: translateY(-3px);
-}
-
-/* GRID DE COCHES */
+/* GRID */
 .car-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
@@ -115,28 +93,30 @@ h2 {
 
 /* TARJETAS */
 .car-card {
-    background: #111;
-    border-radius: 18px;
+    background: var(--bmw-gray);
+    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 0 25px rgba(0,0,0,0.5);
     transition: 0.3s;
+    border: 1px solid #222;
 }
 
 .car-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 35px rgba(0,162,255,0.4);
+    transform: translateY(-6px);
+    border-color: var(--bmw-blue);
 }
 
 .car-card img {
     width: 100%;
     height: 230px;
     object-fit: cover;
+    display: block;
 }
 
 .car-card h3 {
     margin: 18px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 600;
+    color: var(--bmw-light);
 }
 
 .car-card p {
@@ -147,17 +127,18 @@ h2 {
 
 .car-card strong {
     display: block;
-    margin: 0 18px 25px;
+    margin: 0 18px 20px;
     font-size: 20px;
-    color: #00a2ff;
+    color: var(--bmw-blue);
 }
 
 /* FOOTER */
 footer {
-    background: #000;
+    background: var(--bmw-black);
     text-align: center;
     padding: 25px;
     margin-top: 50px;
     opacity: 0.8;
     font-size: 14px;
+    border-top: 2px solid var(--bmw-blue);
 }
