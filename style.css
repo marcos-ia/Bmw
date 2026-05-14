@@ -17,8 +17,8 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: var(--bmw-black);
-    color: var(--bmw-light);
+    background: #f5f0e6; /* beige premium */
+    color: #0a0a0a;
 }
 
 /* HEADER */
