@@ -8,7 +8,7 @@
 :root {
     --bmw-blue: #1c69d4;
     --bmw-black: #0a0a0a;
-    --bmw-dark: #000000;
+    --bmw-dark: #faf3e0;
     --bmw-gray: #1a1a1a;
     --bmw-light: #f2f2f2;
 }
@@ -17,7 +17,7 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background: #f5f0e6; /* beige premium */
+    background: #faf3e0; /* beige premium */
     color: #0a0a0a;
 }
 
